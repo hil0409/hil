@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+                <title>Page Title</title>
+                <style>
+                        div{
+                                float:left;
+                        }
+                </style>
+        </head>
+        <body>
+                <a href="home.html">home</a>
+                <div id = 'main3'>
+                        <ul>
+                                {%for value3 in values3%}
+                                <li><a href="test.html\{{value3}}">{{value3}}</a></li>
+                                {%endfor%}
+                               
+                        </ul>
+                        </div>
+                <div id = 'main'>
+                <ul>
+                        {%for value in values%}
+                        <li>{{value}}</li>
+                        {%endfor%}
+                       
+                </ul>
+                </div>
+                <div id = 'main2'>
+                        <ul>
+                                {%for value2 in values2%}
+                                <li>{{value2}}</li>
+                                {%endfor%}
+                               
+                        </ul>
+                </div>
+
+        </body>
+        </html>
+    
